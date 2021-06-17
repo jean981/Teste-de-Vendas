@@ -2,12 +2,54 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
+    <meta name="description" content="Esta é uma página para demonstrar a estrutura do HTML">
+    <!--link para a folha de estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <!--link para a folha de estilo CSS -->
+    <script type="text/javascript" src="scripts.js"></script>
     <title> Pagina da Fabrica de Vendas </title>
   </head>
   <body>
-    <h1> Pagina Home </h1>
-    <a href= "vendas.html"> Ir para a pagina de Vendas</a>
-    <p>Relatório de vendas do Mês de Maio</p>
-    <a href= "rel-maio.html"> Ir para a pagina: Relatorio de Maio</a>
+    <div id="wrap"> <!--divisao principal do site -->
+    <header>
+      <!--imagem da logomarca da empresa em destaque -->
+      <img src="pictures\icone-kdin-sites.png" align="middle" alt="Logo Empresarial do Site">
+      <h1> Destaque de Vendas do Mês </h1>
+      <nav>
+        <ul>
+          <li><a href="home.html"   alt="Página inicial" class="current">Início</a></li>
+          <li><a href="vendas.html" alt="Sobre a nossa empresa">Histórico</a></li>
+          <li><a href="contato.html"alt="Entre em contato">Contato</a></li>
+        </ul>
+    </header>
+    </div>
+    <div id="content"><!--conteudo do site -->
+    <section>
+      <h2>Motos Experientes:</h2>
+      <article>
+        <img src="pictures/moto-azul.png" alt="Moto Azul">
+        <h3>Moto usada  Azul</h3>
+        <p>No passado, a divisão entre tipos de motos era mais marcante e radical: haviam as
+          <em>“street” e as “trail”</em>. Enquanto as primeiras eram voltadas, como o próprio nome diz,
+          ao uso urbano <b>(street = rua em inglês)</b>, as trail <b>(trilha, na língua de Shakespeare)</b>
+          eram as motos de campo, pensadas para uso em atividades de lazer fora de estrada.</p>
+         <!--componente JS pra mostar o preço da moto -->
+        <input type="button" value="Valor da Moto" onclick="mostrarPreco(6000)"/>
+      </article>
+    </section>
+    <section>
+      <h2>Motos Super Novas:</h2>
+      <article>
+        <img src="pictures/moto-verde.png" alt="Moto Verde">
+        <h3>Moto Zero Km</h3>
+        <p> Esta motocicleta garante segurança para você encarar o trânsito da cidade com mais tranquilidade.
+            Ela conta com o sistema de freios <b><em>CBS (Combined Brake System)</em></b> que distribui a 
+            frenagem entre as rodas de maneira inteligente. Com ele, ao acionar o freio traseiro, o freio 
+            dianteiro é acionado simultaneamente. <b>Tudo isso em um único comando!</b></p>
+         <!--componente JS pra mostar o preço da moto -->
+        <input type="button" value="Valor da Moto" onclick="mostrarPreco(6000)"/>
+      </article>
+    </section>
+    </div><!--final do conteudo do site-->
   </body>
 </html>
